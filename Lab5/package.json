@@ -1,0 +1,22 @@
+{
+  "name": "lab5",
+  "version": "1.0.0",
+  "description": "This 5 lab for Testing labs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vikashakhlai/Testing_Labs.git"
+  },
+  "author": "V.Shakhlai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vikashakhlai/Testing_Labs/issues"
+  },
+  "homepage": "https://github.com/vikashakhlai/Testing_Labs#readme",
+  "devDependencies": {
+    "fs-extra": "^10.1.0"
+  }
+}
