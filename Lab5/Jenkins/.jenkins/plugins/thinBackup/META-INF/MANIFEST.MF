@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 11
+Specification-Title: ThinBackup
+Specification-Version: 1.11
+Implementation-Title: ThinBackup
+Implementation-Version: 1.11
+Plugin-Class: org.jvnet.hudson.plugins.thinbackup.ThinBackupPluginImpl
+Group-Id: org.jvnet.hudson.plugins
+Short-Name: thinBackup
+Long-Name: ThinBackup
+Url: https://github.com/jenkinsci/thin-backup-plugin
+Plugin-Version: 1.11
+Hudson-Version: 2.222.1
+Jenkins-Version: 2.222.1
+PluginFirstClassLoader: true
+Plugin-Developers: Thomas Fuerer:tofuatjava:tfuerer.javanet@gmail.com,Ma
+ tthias Steinkogler:alienllama:alienllama@gmail.com
+Plugin-License-Name: GPLv3
+Plugin-ScmUrl: https://github.com/jenkinsci/thin-backup-plugin
+

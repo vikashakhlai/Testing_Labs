@@ -1,0 +1,35 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>vika</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <hudson.plugins.jobConfigHistory.JobConfigBadgeAction plugin="jobConfigHistory@1176.v1b_4290db_41a_5">
+      <configDates>
+        <string>2022-10-23_17-38-58</string>
+        <string>2022-10-23_17-34-28</string>
+      </configDates>
+    </hudson.plugins.jobConfigHistory.JobConfigBadgeAction>
+  </actions>
+  <queueId>11</queueId>
+  <timestamp>1666535953061</timestamp>
+  <startTime>1666535953073</startTime>
+  <result>FAILURE</result>
+  <duration>171</duration>
+  <charset>windows-1251</charset>
+  <keepLog>false</keepLog>
+  <builtOn>DESKTOP-EPTTBPH</builtOn>
+  <workspace>C:\Users\Vika\AppData\Local\Jenkins\.jenkins\slave\workspace\First job</workspace>
+  <hudsonVersion>2.374</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="java.util.Collections$UnmodifiableSet">
+    <c class="sorted-set"/>
+  </culprits>
+</build>

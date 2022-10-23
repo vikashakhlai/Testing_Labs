@@ -1,0 +1,27 @@
+окт. 23, 2022 5:21:09 PM hudson.remoting.jnlp.Main createEngine
+INFO: Setting up agent: DESKTOP-EPTTBPH
+окт. 23, 2022 5:21:09 PM hudson.remoting.Engine startEngine
+INFO: Using Remoting version: 3063.v26e24490f041
+окт. 23, 2022 5:21:09 PM org.jenkinsci.remoting.engine.WorkDirManager initializeWorkDir
+INFO: Using C:\Users\Vika\AppData\Local\Jenkins\.jenkins\slave\remoting as a remoting work directory
+окт. 23, 2022 5:21:09 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Locating server among [http://localhost:8081/]
+окт. 23, 2022 5:21:09 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+INFO: Remoting server accepts the following protocols: [JNLP4-connect, Ping]
+окт. 23, 2022 5:21:09 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Agent discovery successful
+  Agent address: localhost
+  Agent port:    49695
+  Identity:      a8:33:5a:a9:da:b7:b4:a7:f0:3e:73:05:98:45:59:8c
+окт. 23, 2022 5:21:09 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Handshaking
+окт. 23, 2022 5:21:09 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Connecting to localhost:49695
+окт. 23, 2022 5:21:09 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Trying protocol: JNLP4-connect
+окт. 23, 2022 5:21:10 PM org.jenkinsci.remoting.protocol.impl.BIONetworkLayer$Reader run
+INFO: Waiting for ProtocolStack to start.
+окт. 23, 2022 5:21:10 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Remote identity confirmed: a8:33:5a:a9:da:b7:b4:a7:f0:3e:73:05:98:45:59:8c
+окт. 23, 2022 5:21:10 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Connected

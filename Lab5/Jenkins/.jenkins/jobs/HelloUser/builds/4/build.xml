@@ -1,0 +1,100 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>name</name>
+          <value>Vika</value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>name</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>vika</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <hudson.plugins.jacoco.JacocoBuildAction plugin="jacoco@3.3.2">
+      <clazz>
+        <missed>0</missed>
+        <covered>0</covered>
+        <initialized>false</initialized>
+      </clazz>
+      <method>
+        <missed>0</missed>
+        <covered>0</covered>
+        <initialized>false</initialized>
+      </method>
+      <line>
+        <missed>0</missed>
+        <covered>0</covered>
+        <initialized>false</initialized>
+      </line>
+      <complexity>
+        <missed>0</missed>
+        <covered>0</covered>
+        <initialized>false</initialized>
+      </complexity>
+      <instruction>
+        <missed>0</missed>
+        <covered>0</covered>
+        <initialized>false</initialized>
+      </instruction>
+      <branch>
+        <missed>0</missed>
+        <covered>0</covered>
+        <initialized>false</initialized>
+      </branch>
+      <maxClazz>1</maxClazz>
+      <maxMethod>1</maxMethod>
+      <maxLine>1</maxLine>
+      <maxComplexity>1</maxComplexity>
+      <maxInstruction>1</maxInstruction>
+      <maxBranch>1</maxBranch>
+      <failed>false</failed>
+      <inclusions>
+        <string></string>
+      </inclusions>
+      <exclusions>
+        <string></string>
+      </exclusions>
+      <thresholds>
+        <minClass>0</minClass>
+        <maxClass>0</maxClass>
+        <minMethod>0</minMethod>
+        <maxMethod>0</maxMethod>
+        <minLine>0</minLine>
+        <maxLine>0</maxLine>
+        <minBranch>0</minBranch>
+        <maxBranch>0</maxBranch>
+        <minInstruction>0</minInstruction>
+        <maxInstruction>0</maxInstruction>
+        <minComplexity>0</minComplexity>
+        <maxComplexity>0</maxComplexity>
+      </thresholds>
+    </hudson.plugins.jacoco.JacocoBuildAction>
+  </actions>
+  <queueId>20</queueId>
+  <timestamp>1666536552682</timestamp>
+  <startTime>1666536552699</startTime>
+  <result>SUCCESS</result>
+  <duration>418</duration>
+  <charset>windows-1251</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>C:\Users\Vika\AppData\Local\Jenkins\.jenkins\workspace\HelloUser</workspace>
+  <hudsonVersion>2.374</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="java.util.Collections$UnmodifiableSet">
+    <c class="sorted-set"/>
+  </culprits>
+</build>

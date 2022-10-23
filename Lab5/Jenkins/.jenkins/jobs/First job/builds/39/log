@@ -1,0 +1,105 @@
+Çàïóùåí ïî òàéìåðó
+Running as SYSTEM
+Ñîáèðàåòñÿ óäàëåííî íà [8mha:////4PmdHIn2wG3Bt6iQe/UrQzo2XLn00tRv2/khGsMBsobJAAAApR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZJ/eT83ILSktQifRfXYO8Q/wBd14CQEKcADwCnN3YMzgAAAA==[0mDESKTOP-EPTTBPH (chrome win10 x64) in workspace C:\Users\Vika\AppData\Local\Jenkins\.jenkins\slave\workspace\First job
+The recommended git tool is: NONE
+No credentials specified
+ > git.exe rev-parse --resolve-git-dir C:\Users\Vika\AppData\Local\Jenkins\.jenkins\slave\workspace\First job\.git # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/vitalliuss/helloci.git # timeout=10
+ERROR: Error fetching remote repo 'origin'
+hudson.plugins.git.GitException: Failed to fetch from https://github.com/vitalliuss/helloci.git
+	at hudson.plugins.git.GitSCM.fetchFrom(GitSCM.java:1006)
+	at hudson.plugins.git.GitSCM.retrieveChanges(GitSCM.java:1248)
+	at hudson.plugins.git.GitSCM.checkout(GitSCM.java:1312)
+	at hudson.scm.SCM.checkout(SCM.java:540)
+	at hudson.model.AbstractProject.checkout(AbstractProject.java:1239)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.defaultCheckout(AbstractBuild.java:649)
+	at jenkins.scm.SCMCheckoutStrategy.checkout(SCMCheckoutStrategy.java:85)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:521)
+	at hudson.model.Run.execute(Run.java:1900)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:44)
+	at hudson.model.ResourceController.execute(ResourceController.java:107)
+	at hudson.model.Executor.run(Executor.java:449)
+Caused by: hudson.plugins.git.GitException: Command "git.exe config remote.origin.url https://github.com/vitalliuss/helloci.git" returned status code 128:
+stdout: 
+stderr: fatal: not in a git directory
+
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:2697)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:2627)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:2623)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommand(CliGitAPIImpl.java:1981)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommand(CliGitAPIImpl.java:1993)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.setRemoteUrl(CliGitAPIImpl.java:1601)
+	at hudson.plugins.git.GitAPI.setRemoteUrl(GitAPI.java:161)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at hudson.remoting.RemoteInvocationHandler$RPCRequest.perform(RemoteInvocationHandler.java:924)
+	at hudson.remoting.RemoteInvocationHandler$RPCRequest.call(RemoteInvocationHandler.java:902)
+	at hudson.remoting.RemoteInvocationHandler$RPCRequest.call(RemoteInvocationHandler.java:853)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:211)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:54)
+	at hudson.remoting.Request$2.run(Request.java:377)
+	at hudson.remoting.InterceptingExecutorService.lambda$wrap$0(InterceptingExecutorService.java:78)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at hudson.remoting.Engine$1.lambda$newThread$0(Engine.java:125)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+	Suppressed: hudson.remoting.Channel$CallSiteStackTrace: Remote call to JNLP4-connect connection from 127.0.0.1/127.0.0.1:50800
+		at hudson.remoting.Channel.attachCallSiteStackTrace(Channel.java:1784)
+		at hudson.remoting.UserRequest$ExceptionResponse.retrieve(UserRequest.java:356)
+		at hudson.remoting.Channel.call(Channel.java:1000)
+		at hudson.remoting.RemoteInvocationHandler.invoke(RemoteInvocationHandler.java:285)
+		at jdk.proxy73/jdk.proxy73.$Proxy145.setRemoteUrl(Unknown Source)
+		at org.jenkinsci.plugins.gitclient.RemoteGitImpl.setRemoteUrl(RemoteGitImpl.java:311)
+		at hudson.plugins.git.GitSCM.fetchFrom(GitSCM.java:994)
+		at hudson.plugins.git.GitSCM.retrieveChanges(GitSCM.java:1248)
+		at hudson.plugins.git.GitSCM.checkout(GitSCM.java:1312)
+		at hudson.scm.SCM.checkout(SCM.java:540)
+		at hudson.model.AbstractProject.checkout(AbstractProject.java:1239)
+		at hudson.model.AbstractBuild$AbstractBuildExecution.defaultCheckout(AbstractBuild.java:649)
+		at jenkins.scm.SCMCheckoutStrategy.checkout(SCMCheckoutStrategy.java:85)
+		at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:521)
+		at hudson.model.Run.execute(Run.java:1900)
+		at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:44)
+		at hudson.model.ResourceController.execute(ResourceController.java:107)
+		at hudson.model.Executor.run(Executor.java:449)
+ERROR: Error fetching remote repo 'origin'
+[Cobertura] Publishing Cobertura coverage report...
+
+FATAL: Unable to find coverage results
+java.io.IOException: C:\Users\Vika\AppData\Local\Jenkins\.jenkins\slave\workspace\First job\.NET\Calculator.sln is not an XML file, please check your report pattern
+	at hudson.plugins.cobertura.CoberturaPublisher$ParseReportCallable.invoke(CoberturaPublisher.java:919)
+	at hudson.plugins.cobertura.CoberturaPublisher$ParseReportCallable.invoke(CoberturaPublisher.java:883)
+	at hudson.FilePath$FileCallableWrapper.call(FilePath.java:3492)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:211)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:54)
+	at hudson.remoting.Request$2.run(Request.java:377)
+	at hudson.remoting.InterceptingExecutorService.lambda$wrap$0(InterceptingExecutorService.java:78)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at hudson.remoting.Engine$1.lambda$newThread$0(Engine.java:125)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+	Suppressed: hudson.remoting.Channel$CallSiteStackTrace: Remote call to JNLP4-connect connection from 127.0.0.1/127.0.0.1:50800
+		at hudson.remoting.Channel.attachCallSiteStackTrace(Channel.java:1784)
+		at hudson.remoting.UserRequest$ExceptionResponse.retrieve(UserRequest.java:356)
+		at hudson.remoting.Channel.call(Channel.java:1000)
+		at hudson.FilePath.act(FilePath.java:1186)
+		at hudson.FilePath.act(FilePath.java:1175)
+		at hudson.plugins.cobertura.CoberturaPublisher.perform(CoberturaPublisher.java:550)
+		at jenkins.tasks.SimpleBuildStep.perform(SimpleBuildStep.java:123)
+		at hudson.tasks.BuildStepCompatibilityLayer.perform(BuildStepCompatibilityLayer.java:80)
+		at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+		at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:818)
+		at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:767)
+		at hudson.model.Build$BuildExecution.post2(Build.java:179)
+		at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:711)
+		at hudson.model.Run.execute(Run.java:1925)
+		at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:44)
+		at hudson.model.ResourceController.execute(ResourceController.java:107)
+		at hudson.model.Executor.run(Executor.java:449)
+ERROR: Step ‘Publish Cobertura Coverage Report’ failed: [Cobertura] Unable to find coverage results
+Finished: FAILURE

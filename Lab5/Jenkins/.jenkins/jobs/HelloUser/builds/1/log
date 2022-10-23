@@ -1,0 +1,10 @@
+Started by user [8mha:////4LzWy1zWHmqCrhW1aGj0TmC3OFtlh8tanj6vVHVu9BxLAAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyFEgYu/dLi1CL9sszsRAADaPqEvwAAAA==[0mShakhlai Viktoryia Aleaxandrovna
+Running as SYSTEM
+Building on the built-in node in workspace C:\Users\Vika\AppData\Local\Jenkins\.jenkins\workspace\HelloUser
+[HelloUser] $ cmd /c call C:\Users\Vika\AppData\Local\Temp\jenkins18312131372040936857.bat
+
+C:\Users\Vika\AppData\Local\Jenkins\.jenkins\workspace\HelloUser>ECHO Anonim 
+Anonim
+
+C:\Users\Vika\AppData\Local\Jenkins\.jenkins\workspace\HelloUser>exit 0 
+Finished: SUCCESS
