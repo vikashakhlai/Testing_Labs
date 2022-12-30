@@ -1,0 +1,77 @@
+package NPO.Test;
+
+import NPO.Page.EllesseHomePage;
+import NPO.driver.DriverSingleton;
+import NPO.model.User;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+public class EnterMessageFromTech {
+
+    private static Logger logger = LogManager.getRootLogger();
+    private WebDriver driver;
+
+    @BeforeMethod(alwaysRun = true)
+    public void browserSetup() {
+        driver = DriverSingleton.getDriver();
+
+    }
+
+
+    @Test(description = "Go to chat and send message")
+    public void Chat() throws InterruptedException {
+
+        EllesseHomePage ellesseHomePage = new EllesseHomePage(driver);
+        ellesseHomePage.OpenMainPage();
+
+        driver.get("https://www.ellesse.com/login.jsp?returnTo=https%3A%2F%2Fwww.ellesse.com%2FaccountHome.account");
+
+        User user = new User("vikto.0222@gmail.com", "");
+        logger.info("Create user");
+
+        Thread.sleep(1000);
+        WebElement inputEmail = driver.findElement(By.xpath("/html/body/div[1]/div[5]/main/div/div[1]/section/div/div[1]/div/form/div[2]/div/div/div[1]/input"));
+        inputEmail.click();
+        inputEmail.sendKeys(user.getEmail());
+        logger.info("Enter email");
+
+        Thread.sleep(1000);
+        WebElement inputPassword = driver.findElement(By.xpath("/html/body/div[1]/div[5]/main/div/div[1]/section/div/div[1]/div/form/div[3]/div/div/div[1]/input"));
+        inputPassword.click();
+        inputPassword.sendKeys(user.getPassword());
+        logger.info("Enter password");
+
+        Thread.sleep(1000);
+        ellesseHomePage.FindElementAndClick("/html/body/div[1]/div[5]/main/div/div[1]/section/div/div[1]/div/form/div[5]/div/button");
+        logger.info("authorized");
+        Thread.sleep(5000);
+
+       driver.get("https://www.ellesse.com/accountHome.account");
+       ellesseHomePage.FindElementAndClick("/html/body/div[1]/div[5]/main/div[1]/div[1]/nav/ul[3]/li[1]/a");
+       logger.info("open chapter");
+       ellesseHomePage.FindElementAndClick("/html/body/main/div/div[3]/div[2]/div[1]");
+       logger.info("open message");
+       ellesseHomePage.FindElementAndClick("/html/body/div[1]/div[5]/main/div[1]/div[2]/div[2]/form/div[1]/div/div");
+       logger.info("click from message category");
+       WebElement textInput=driver.findElement(By.xpath("/html/body/div[1]/div[5]/main/div[1]/div[2]/div[2]/form/div[2]/textarea"));
+       textInput.sendKeys("Some text");
+       logger.info("enter in textarea message");
+       ellesseHomePage.FindElementAndClick("/html/body/div[1]/div[5]/main/div[1]/div[2]/div[2]/form/div[4]/button");
+       logger.info("send message");
+    }
+
+
+    @AfterMethod(alwaysRun = true)
+    public void browserTearDown() {
+        DriverSingleton.closeDriver();
+
+    }
+
+}
